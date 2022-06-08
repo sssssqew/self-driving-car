@@ -9,7 +9,7 @@ animate()
 
 function animate(){
   canvas.height = window.innerHeight
-  car.update()
+  car.update(road.borders)
 
   ctx.save()
   ctx.translate(0, -car.y + canvas.height*0.7) // 자동차가 캔버스의 중앙점보다 조금 아래쪽에 항상 위치하도록 함
